@@ -1,0 +1,1075 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Group Theory, 永慕">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Group Theory | 永慕</title>
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.jpg" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">永慕</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.jpg" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">永慕</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/source/medias/1.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Group Theory</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Group-Theory/">
+                                <span class="chip bg-color">Group Theory</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Group-Theory/" class="post-category">
+                                Group Theory
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-06-21
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.2k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="Group-Theory"><a href="#Group-Theory" class="headerlink" title="Group Theory"></a>Group Theory</h1><h2 id="1-Basic-Mathematical-Background"><a href="#1-Basic-Mathematical-Background" class="headerlink" title="1 Basic Mathematical Background"></a>1 Basic Mathematical Background</h2><h3 id="1-3-Basic-Definitions"><a href="#1-3-Basic-Definitions" class="headerlink" title="1.3 Basic Definitions"></a>1.3 Basic Definitions</h3><p><strong>Definition 1.</strong> The order of a group $\equiv$ the number of elements in the group.</p>
+<p><strong>Definition 2.</strong> A <strong>subgroup</strong> $\equiv$ a collection of elements within a group that by themselves <strong>form a group</strong>.</p>
+<p> <strong>Theorem.</strong> If in a finite group, an element <em>X</em> is multiplied by itself enough times (n), the identity $X^n = E$ is eventually recovered.</p>
+<p> <strong>Definition 3</strong> The order of an element $\equiv$ the smallest value of n in the relation $X^n = E$.</p>
+<p> <strong>Definition 4.</strong> The <strong>period</strong> of an element X ≡ collection of elements $E, X, X^2, . . . , X^{n-1}$, where n is the order of the element. The period forms an Abelian subgroup.</p>
+<h3 id="1-4-Rearrangement-Theorem"><a href="#1-4-Rearrangement-Theorem" class="headerlink" title="1.4 Rearrangement Theorem"></a>1.4 Rearrangement Theorem</h3><p>If $E,A_1,A_2, . . . , A_h$ are the elements of</p>
+<p>a group, and if $A_k$ is an arbitrary group element, then the assembly of elements $A_kE,A_kA_1, . . .,A_kA_h$ contains each element of the group once and only once.</p>
+<h3 id="1-5-Cosets"><a href="#1-5-Cosets" class="headerlink" title="1.5 Cosets"></a>1.5 Cosets</h3><p>The cosets $\to$ factor group $\to$ space groups</p>
+<p> <strong>Definition 5.</strong> If <em>B</em> is a subgroup of the group <em>G</em>, and <em>X</em> is an element of <em>G</em>, then the assembly $EX,B_1X,B_2X, . . .,B_gX$ is the right coset of <em>B</em>, where <em>B</em> consists of $E,B_1,B_2, . . .,B_g$.</p>
+<p> A coset need not be a subgroup.</p>
+<p> <strong>Theorem.</strong> Two right cosets of given subgroup either contain exactly the same elements, or else have no elements in common.</p>
+<p> <strong>Theorem.</strong> The order of a subgroup is a divisor of the order of the group.</p>
+<h3 id="1-6-Conjugation-and-Class"><a href="#1-6-Conjugation-and-Class" class="headerlink" title="1.6 Conjugation and Class"></a>1.6 Conjugation and Class</h3><p><strong>Definition 6.</strong> An element B conjugate to A is by definition $B \equiv XAX^{-1}$, where X is an arbitrary element of the group.</p>
+<p><strong>Theorem.</strong> If B is conjugate to A and C is conjugate to B, then C is conjugate to A.</p>
+<p><strong>Definition 7.</strong> A class is the totality of elements which can be obtained from a given group element by conjugation.</p>
+<p>Note that each class corresponds to a physically distinct kind of symmetry operation.</p>
+<p> <strong>Theorem.</strong> All elements of the same class have the same order.</p>
+<p> <strong>Definition 8.</strong> A subgroup B is <strong>self-conjugate</strong> (or invariant, or normal ) if $XBX^{-1}$ is identical with B for all possible choices of X in the group.</p>
+<p> To form a self-conjugate subgroup, it is necessary to include entire classes in this subgroup.</p>
+<p> <strong>Definition 9.</strong> A group with no self-conjugate subgroups $\equiv$ a simple group.</p>
+<p> <strong>Theorem.</strong> The right and left cosets of a self-conjugate subgroup N are the same.</p>
+<p>$$XN_i=XN_iX^{-1}X=N_jX$$</p>
+<p> <strong>Theorem.</strong> The multiplication of the elements of two right cosets of a selfconjugate subgroup gives another right coset.</p>
+<p>$$(NX)(NY) = N_iXN_lY=N_i{XN_l}Y=N_i(N_mX)Y=(N_iN_m)(XY)=N(XY)$$</p>
+<h3 id="1-7-Factor-Groups"><a href="#1-7-Factor-Groups" class="headerlink" title="1.7 Factor Groups"></a>1.7 Factor Groups</h3><p><strong>Definition 10.</strong> The factor group (or quotient group) is constructed with respect to a self-conjugate subgroup as the collection of cosets of the selfconjugate subgroup, each coset being considered an element of the factor group.</p>
+<p> <strong>Definition 11.</strong> The index of a subgroup $\equiv$ total number of cosets = $(order of group)/ (order of subgroup)$.</p>
+<p> The order of the factor group is the index of the self-conjugate subgroup.</p>
+<h3 id="1-8-Group-Theory-and-Quantum-Mechanics"><a href="#1-8-Group-Theory-and-Quantum-Mechanics" class="headerlink" title="1.8 Group Theory and Quantum Mechanics"></a>1.8 Group Theory and Quantum Mechanics</h3><p> The group of symmetry operators $\hat{P}_R$ which leave the Hamiltonian invariant.</p>
+<p>$\hat{P}_R$ are symmetry operations of the system and the $\hat{P}_R$ operators commute with the Hamiltonian.</p>
+<p>$\hat{P}_R$ $\to$ the group of the Schrodinger equation</p>
+<h2 id="2-Representation-Theory-and-Basic-Theorems"><a href="#2-Representation-Theory-and-Basic-Theorems" class="headerlink" title="2 Representation Theory and Basic Theorems"></a>2 Representation Theory and Basic Theorems</h2><h3 id="2-1-Important-Definitions"><a href="#2-1-Important-Definitions" class="headerlink" title="2.1 Important Definitions"></a>2.1 Important Definitions</h3><p><strong>Definition 12.</strong> Two groups are isomorphic or homomorphic if there exists a correspondence between their elements such that<br>$$<br>A\to\hat{A}\\<br>B\to\hat{B}\\<br>AB\to\hat{A}\hat{B}<br>$$<br><strong>Definition 13.</strong> A representation of an abstract group is a substitution group (matrix group with square matrices) such that the substitution group is homomorphic (or isomorphic) to the abstract group. We assign a matrix $D(A)$ to each element A of the abstract group such that $ D(AB) = D(A)D(B)$.</p>
+<p> First of all, we will find that an eigenfunction for a quantum mechanical operator will transform under a symmetry operation similar to the application of the matrix representing the symmetry operation on the matrix for the wave function.</p>
+<p> Secondly, quantum mechanical operators are usually written in terms of a matrix representation, and thus it is convenient to write symmetry operations using the same kind of matrix representation.</p>
+<p> Finally, matrix algebra is often easier to manipulate than geometrical symmetry operations.</p>
+<h3 id="2-2-Matrices"><a href="#2-2-Matrices" class="headerlink" title="2.2 Matrices"></a>2.2 Matrices</h3><p><strong>Definition 14.</strong> Hermitian matrices are defined by: $\widetilde{A}=A^*,\widetilde{A}^\ast=A, A^\dagger=A$</p>
+<p><em>Unitary matrices</em> are defined by: $\widetilde{A}^*=A^\dagger=A^{-1}$;</p>
+<p><em>Orthonormal matrices</em> are defined by: $\widetilde{A}=A^{-1}$.</p>
+<p> <strong>Definition 15.</strong> The dimensionality of a representation is equal to the dimensionality of each of its matrices, which is in turn equal to the number of rows or columns of the matrix.</p>
+<p> These representations are not <em>unique</em>.</p>
+<p> To overcome the difficulty of non-uniqueness of a representation with regard to a similarity transformation, we often just deal with the traces of the matrices which are invariant under similarity transformations. The trace of a matrix is defined as the sum of the diagonal matrix elements. </p>
+<p> To overcome the difficulty of the ambiguity of representations in general, we introduce the concept of irreducible representations.</p>
+<h3 id="2-3-Irreducible-Representations"><a href="#2-3-Irreducible-Representations" class="headerlink" title="2.3 Irreducible Representations"></a>2.3 Irreducible Representations</h3><p>block form $\to$ no longer in block form.<br>$$<br>\begin{pmatrix}<br>D(A)&amp;O\\O&amp;D’(A)<br>\end{pmatrix}<br>$$<br><strong>Definition 16.</strong> If by one and the same equivalence transformation, all the matrices in the representation of a group can be made to acquire <em>the same block form</em>, then the representation is said to be <em>reducible</em>; otherwise it is <em>irreducible</em>. Thus, an irreducible representation cannot be expressed in terms of representations of lower dimensionality.</p>
+<p>$\Gamma_R$<br>$$<br>\begin{pmatrix} \Gamma_1&amp;O&amp;O\\O&amp;\Gamma_{1’}&amp;O\\O&amp;O&amp;\Gamma_2 \end{pmatrix}<br>$$<br>$$\Gamma_R=\Gamma_1+\Gamma_{1’}+\Gamma_2$$</p>
+<p> Assume $\Gamma_R$ is a reducible representation for some group $G$ but an irreducible representation for some other group $G’’$.</p>
+<p>some interaction is breaking up a fourfold degenerate level in group $G’’$ into three energy levels in group $G$: two nondegenerate ones and a doubly degenerate one.</p>
+<p>when a perturbation is applied to lower the symmetry, the degeneracy of the energy levels tends to be reduced.</p>
+<h3 id="2-4-The-Unitarity-of-Representations"><a href="#2-4-The-Unitarity-of-Representations" class="headerlink" title="2.4 The Unitarity of Representations"></a>2.4 The Unitarity of Representations</h3><p><strong>Theorem.</strong> Every representation with matrices having nonvanishing determinants can be brought into <em>unitary form</em> by an equivalence (similarity) transformation.</p>
+<p>$$\hat{\hat{A}_x}=d^{-1/2}U^{-1}A_xUd^{1/2}$$</p>
+<p>$$H=\sum_{x=1}^hA_xA_x^{\dagger}$$</p>
+<p>$$d=\sum_{x=1}^h\hat{A}_x\hat{A}_x^{\dagger}$$</p>
+<p>$U$ is the unitary matrix that diagonalizes the Hermitian matrix $H$ and $\hat{A}_x=U^{-1}A_xU$.</p>
+<h3 id="2-5-Schur’s-Lemma-part1"><a href="#2-5-Schur’s-Lemma-part1" class="headerlink" title="2.5 Schur’s Lemma part1"></a>2.5 Schur’s Lemma part1</h3><p><strong>Lemma. A</strong> matrix which commutes with all matrices of an irreducible representation is a constant matrix, i.e., a constant times the unit matrix. Therefore, if a non-constant commuting matrix exists, the representation is reducible; if none exists, the representation is irreducible.</p>
+<h3 id="2-6-Schur’s-Lemma-part2"><a href="#2-6-Schur’s-Lemma-part2" class="headerlink" title="2.6 Schur’s Lemma part2"></a>2.6 Schur’s Lemma part2</h3><p><strong>Lemma.</strong> If the matrix representations $D^{(1)}(A_1),D^{(1)}(A_2), . . . , D^{(1)}(A_h)$ and $D^{(2)}(A_1),D^{(2)}(A_2), . . . , D^{(2)}(A_h)$ are two irreducible representations of a given group of dimensionality $\ell_1$ and $\ell_2$, respectively, then, if there is a matrix of $\ell_1$ columns and $\ell_2$ rows M such that </p>
+<p>$$MD^{(1)}(A_x) = D^{(2)}(A_x)M$$</p>
+<p>for all $A_x$, then $M$ must be the null matrix $(M=O)$ if $\ell_1 \neq \ell_2$. If $\ell_1 = \ell_2$, then either $M=O$ or the representations $D^{(1)}(A_x)$ and $D^{(2)}(A_x)$ differ from each other by an equivalence (or similarity) transformation.</p>
+<h3 id="2-7-Wonderful-Orthogonality-Theorem"><a href="#2-7-Wonderful-Orthogonality-Theorem" class="headerlink" title="2.7 Wonderful Orthogonality Theorem"></a>2.7 Wonderful Orthogonality Theorem</h3><p><strong>Theorem.</strong> The orthonormality relation</p>
+<p>$$\sum_RD^{(\Gamma_j)}_{\mu\nu}(R)D^{(\Gamma_{j’})}_{\mu’\nu’}(R^{-1})=\frac{h}{\ell_j}\delta_{\Gamma_j,\Gamma_{j’}}\delta_{\mu\mu’}\delta_{\nu\nu’}$$</p>
+<p>$$\sum_RD^{(\Gamma_j)}_{\mu\nu}(R)\lbrack D^{(\Gamma_{j’})}_{\mu’\nu’}(R^{-1})\rbrack^*=\frac{h}{\ell_j}\delta_{\Gamma_j,\Gamma_{j’}}\delta_{\mu\mu’}\delta_{\nu\nu’}$$</p>
+<h3 id="2-8-Representations-and-Vector-Spaces"><a href="#2-8-Representations-and-Vector-Spaces" class="headerlink" title="2.8 Representations and Vector Spaces"></a>2.8 Representations and Vector Spaces</h3><p>$$\sum_j\ell^2_j \leq h$$</p>
+<h2 id="3-Character-of-a-Representation"><a href="#3-Character-of-a-Representation" class="headerlink" title="3 Character of a Representation"></a>3 Character of a Representation</h2><p>if $D^{(\Gamma_j)}(R)$ is a representation of a group, so is $U^{−1}D^{(\Gamma_j)}(R)U$. To get around this arbitrariness, we introduce the use of the <strong>trace</strong> (or <strong>character</strong>) of a matrix representation which remains invariant under a similarity transformation.</p>
+<h3 id="3-1-Definition-of-Character"><a href="#3-1-Definition-of-Character" class="headerlink" title="3.1 Definition of Character"></a>3.1 Definition of Character</h3><p><strong>Definition 17.</strong> The character of the matrix representation $\chi^{(\Gamma_j)}(R)$ for a symmetry operation $R$ in a representation $D^{(\Gamma_j)}(R)$ is the trace (or the sum over</p>
+<p>diagonal matrix elements) of the matrix of the representation:</p>
+<p>$$\chi^{(\Gamma_j)}(R)=traceD^{(\Gamma_j)}(R)=\sum_{\mu=1}^{\ell_j}D^{(\Gamma_j)}(R)_{\mu\mu}$$</p>
+<p>where $\ell_j$ is the dimensionality of the representation $\Gamma_j$ and $j$ is a representation</p>
+<p>index.</p>
+<p>From the definition, it follows that representation $\Gamma_j$ will have $h$ characters, one for each element in the group.</p>
+<h3 id="3-2-Characters-and-Class"><a href="#3-2-Characters-and-Class" class="headerlink" title="3.2 Characters and Class"></a>3.2 Characters and Class</h3><p><strong>Theorem.</strong> The character for each element in a class is the same.</p>
+<h3 id="3-3-Wonderful-Orthogonality-Theorem-for-Character"><a href="#3-3-Wonderful-Orthogonality-Theorem-for-Character" class="headerlink" title="3.3 Wonderful Orthogonality Theorem for Character"></a>3.3 Wonderful Orthogonality Theorem for Character</h3><p><strong>Theorem.</strong> The primitive characters of an irreducible representation obey the orthogonality relation</p>
+<p>$$\sum_R\chi^{(\Gamma_j)}(R)\chi^{(\Gamma_{j’})}(R^{-1})=h\delta_{\Gamma_j,\Gamma_{j’}}$$</p>
+<p>$$\sum_R\chi^{(\Gamma_j)}(R)\chi^{(\Gamma_{j’})}(R)^*=h\delta_{\Gamma_j,\Gamma_{j’}}$$</p>
+<p>where $\Gamma_j$ denotes irreducible representation $j$ with dimensionality $\ell_j$.</p>
+<p> <strong>Theorem. A</strong> necessary and sufficient condition that two irreducible representations be equivalent is that the characters be the same.</p>
+<h3 id="3-4-Reducible-Representations"><a href="#3-4-Reducible-Representations" class="headerlink" title="3.4 Reducible Representations"></a>3.4 Reducible Representations</h3><p><strong>Theorem.</strong> The reduction of any reducible representation into its irreducible constituents is unique.</p>
+<p>if $\chi(C_k)$ is the character for some class in a reducible representation</p>
+<p>$$\chi(C_k)=\sum_{\Gamma_i}a_i\chi^{(\Gamma_i)}(C_k)$$</p>
+<p>$$\sum_kN_k[\chi^{(\Gamma_j)}(C_k)]^*\chi(C_k)=S_j$$</p>
+<p>$$a_j=\frac{S_j}{h}$$</p>
+<h3 id="3-5-The-Number-of-Irreducible-Representations"><a href="#3-5-The-Number-of-Irreducible-Representations" class="headerlink" title="3.5 The Number of Irreducible Representations"></a>3.5 The Number of Irreducible Representations</h3><p><strong>Theorem.</strong> The number of irreducible representations is equal to the number of classes.</p>
+<h3 id="3-6-Second-Orthogonality-Relation-for-Characters"><a href="#3-6-Second-Orthogonality-Relation-for-Characters" class="headerlink" title="3.6 Second Orthogonality Relation for Characters"></a>3.6 Second Orthogonality Relation for Characters</h3><p><strong>Theorem.</strong> The summation over all irreducible representations</p>
+<p>$$\sum_{\Gamma_j}\chi^{(\Gamma_j)}(C_k)[\chi^{(\Gamma_j)}(C_{k’})]^*N_k=h\delta_{kk’}$$</p>
+<h3 id="3-7-Regular-Representation"><a href="#3-7-Regular-Representation" class="headerlink" title="3.7 Regular Representation"></a>3.7 Regular Representation</h3><p><strong>Theorem.</strong> The regular representation contains each irreducible representation a number of times equal to the dimensionality of the representation.</p>
+<p> <strong>Theorem.</strong> The order of a group $h$ and the dimensionality $\ell_j$ of its irreducible representations $\Gamma_j$ are related by</p>
+<p>$$\sum_j\ell_j^2=h$$</p>
+<h3 id="3-8-Setting-up-Character-Tables"><a href="#3-8-Setting-up-Character-Tables" class="headerlink" title="3.8 Setting up Character Tables"></a>3.8 Setting up Character Tables</h3><h3 id="3-9-Schoenflies-Symmetry-Notation"><a href="#3-9-Schoenflies-Symmetry-Notation" class="headerlink" title="3.9 Schoenflies Symmetry Notation"></a>3.9 Schoenflies Symmetry Notation</h3><h3 id="3-10-The-Hermann-Mauguin-Symmetry-Notation"><a href="#3-10-The-Hermann-Mauguin-Symmetry-Notation" class="headerlink" title="3.10 The Hermann-Mauguin Symmetry Notation"></a>3.10 The Hermann-Mauguin Symmetry Notation</h3><h2 id="4-Basis-Functions"><a href="#4-Basis-Functions" class="headerlink" title="4 Basis Functions"></a>4 Basis Functions</h2><h3 id="4-1-Symmetry-Operations-and-Basis-Functions"><a href="#4-1-Symmetry-Operations-and-Basis-Functions" class="headerlink" title="4.1 Symmetry Operations and Basis Functions"></a>4.1 Symmetry Operations and Basis Functions</h3><p>$$<br>\hat{P}_R\vert\Gamma_n\alpha\rangle=\sum_jD^{(\Gamma_n)}(R)_{j\alpha}\vert\Gamma_nj\rangle<br>$$</p>
+<p>$$\langle\Gamma_nj\vert\Gamma_{n’}j’\rangle=\delta_{nn’}\delta_{jj’}$$</p>
+<p>$$<br>\int\psi^*_{n,j}(r)\psi_{n’,j’}(r)d^3r=\delta_{nn’}\delta_{jj’}<br>$$</p>
+<h3 id="4-2-Use-of-Basis-Functions-to-Generate-Irreducible-Representations"><a href="#4-2-Use-of-Basis-Functions-to-Generate-Irreducible-Representations" class="headerlink" title="4.2 Use of Basis Functions to Generate Irreducible Representations"></a>4.2 Use of Basis Functions to Generate Irreducible Representations</h3><p>$$D^{(\Gamma_n)}(R)_{j\alpha}=\langle\Gamma_nj\vert\hat{P}_R\vert\Gamma_{n}\alpha\rangle$$</p>
+<h3 id="4-3-Projection-Operators-hat-P-Gamma-n-kl"><a href="#4-3-Projection-Operators-hat-P-Gamma-n-kl" class="headerlink" title="4.3 Projection Operators $\hat{P}^{(\Gamma_n)}_{kl}$"></a>4.3 Projection Operators $\hat{P}^{(\Gamma_n)}_{kl}$</h3><p>$$\hat{P}^{(\Gamma_n)}_{kl}\vert\Gamma_n\ell\rangle\equiv\vert\Gamma_nk\rangle$$</p>
+<h3 id="4-4-Derivation-of-an-Explicit-Expression-for-hat-P-Gamma-n-kl"><a href="#4-4-Derivation-of-an-Explicit-Expression-for-hat-P-Gamma-n-kl" class="headerlink" title="4.4 Derivation of an Explicit Expression for $\hat{P}^{(\Gamma_n)}_{kl}$"></a>4.4 Derivation of an Explicit Expression for $\hat{P}^{(\Gamma_n)}_{kl}$</h3><p>$$\hat{P}^{(\Gamma_n)}_{kl}=\frac{\ell_n}{h}D^{(\Gamma_n)}(R)^*_{k\ell}\hat{P}_R$$</p>
+<h3 id="4-5-The-Effect-of-Projection-Operations-on-an-Arbitrary-Function"><a href="#4-5-The-Effect-of-Projection-Operations-on-an-Arbitrary-Function" class="headerlink" title="4.5 The Effect of Projection Operations on an Arbitrary Function"></a>4.5 The Effect of Projection Operations on an Arbitrary Function</h3><h2 id="5-Splitting-of-Atomic-Orbitals-in-a-Crystal-Potential"><a href="#5-Splitting-of-Atomic-Orbitals-in-a-Crystal-Potential" class="headerlink" title="5 Splitting of Atomic Orbitals in a Crystal Potential"></a>5 Splitting of Atomic Orbitals in a Crystal Potential</h2><h3 id="5-1-Introduction"><a href="#5-1-Introduction" class="headerlink" title="5.1 Introduction"></a>5.1 Introduction</h3><h3 id="5-2-Splitting-of-Atomic-Oribtals-in-a-Crystal-Potential"><a href="#5-2-Splitting-of-Atomic-Oribtals-in-a-Crystal-Potential" class="headerlink" title="5.2 Splitting of Atomic Oribtals in a Crystal Potential"></a>5.2 Splitting of Atomic Oribtals in a Crystal Potential</h3><p>The actual calculation of the crystal field splittings depends on setting up a suitable Hamiltonian and solving it, usually in some approximation scheme. But the energy level degeneracy does not depend on the detailed Hamiltonian, but only on its symmetry. Thus, the decomposition of the level degeneracies in a crystal field is a consequence of the symmetry of the crystal field.</p>
+<h3 id="5-3-Cubic-Crystal-Field-Environment-for-a-Paramagnetic-Transition-Metal-Ion"><a href="#5-3-Cubic-Crystal-Field-Environment-for-a-Paramagnetic-Transition-Metal-Ion" class="headerlink" title="5.3 Cubic Crystal Field Environment for a Paramagnetic Transition Metal Ion"></a>5.3 Cubic Crystal Field Environment for a Paramagnetic Transition Metal Ion</h3><h3 id="5-4-Comments-on-Basis-Functions"><a href="#5-4-Comments-on-Basis-Functions" class="headerlink" title="5.4 Comments on Basis Functions"></a>5.4 Comments on Basis Functions</h3><p>The appropriate set of basis functions that transform as irreducible representations of the group will bring the secular equation into block form.</p>
+<h3 id="5-5-Comments-on-the-Form-of-Crystal-Fields"><a href="#5-5-Comments-on-the-Form-of-Crystal-Fields" class="headerlink" title="5.5 Comments on the Form of Crystal Fields"></a>5.5 Comments on the Form of Crystal Fields</h3><h2 id="6-Application-to-Selection-Rules-and-Direct-Products"><a href="#6-Application-to-Selection-Rules-and-Direct-Products" class="headerlink" title="6 Application to Selection Rules and Direct Products"></a>6 Application to Selection Rules and Direct Products</h2><p>Group theory is often invoked to decide whether or not these states are indeed coupled and this is done by testing whether or not the matrix element $(\psi_{\alpha},H’\psi_{\beta})$ vanishes by symmetry.</p>
+<h3 id="6-1-The-Electromagnetic-Interaction-as-a-Perturbation"><a href="#6-1-The-Electromagnetic-Interaction-as-a-Perturbation" class="headerlink" title="6.1 The Electromagnetic Interaction as a Perturbation"></a>6.1 The Electromagnetic Interaction as a Perturbation</h3><h3 id="6-2-Orthogonality-of-Basis-Functions"><a href="#6-2-Orthogonality-of-Basis-Functions" class="headerlink" title="6.2 Orthogonality of Basis Functions"></a>6.2 Orthogonality of Basis Functions</h3><p><strong>Theorem.</strong> Two basis functions which belong either to different irreducible representations or to different columns (rows) of the same representation are orthogonal.</p>
+<h3 id="6-3-Direct-Product-of-Two-Groups"><a href="#6-3-Direct-Product-of-Two-Groups" class="headerlink" title="6.3 Direct Product of Two Groups"></a>6.3 Direct Product of Two Groups</h3><p>commute with</p>
+<h3 id="6-4-Direct-Product-of-Two-Irreducible-Representations"><a href="#6-4-Direct-Product-of-Two-Irreducible-Representations" class="headerlink" title="6.4 Direct Product of Two Irreducible Representations"></a>6.4 Direct Product of Two Irreducible Representations</h3><p><strong>Theorem.</strong> The direct product of the representations of the groups A and B forms a representation of the direct product group.</p>
+<h3 id="6-5-Characters-for-the-Direct-Product"><a href="#6-5-Characters-for-the-Direct-Product" class="headerlink" title="6.5 Characters for the Direct Product"></a>6.5 Characters for the Direct Product</h3><h3 id="6-6-Selection-Rule-Concept-in-Group-Theoretical-Terms"><a href="#6-6-Selection-Rule-Concept-in-Group-Theoretical-Terms" class="headerlink" title="6.6 Selection Rule Concept in Group Theoretical Terms"></a>6.6 Selection Rule Concept in Group Theoretical Terms</h3><h3 id="6-7-Example-of-Selection-Rules"><a href="#6-7-Example-of-Selection-Rules" class="headerlink" title="6.7 Example of Selection Rules"></a>6.7 Example of Selection Rules</h3><p>In the cubic group Oh the vector $(x, y, z)$ transforms according to the irreducible representation $T_{1u}$ and so does $(p_x, p_y, p_z)$, because both are radial vectors and both are odd under inversion.</p>
+<h2 id="7-Electronic-States-of-Molecules-and-Directed-Valence"><a href="#7-Electronic-States-of-Molecules-and-Directed-Valence" class="headerlink" title="7 Electronic States of Molecules and Directed Valence"></a>7 Electronic States of Molecules and Directed Valence</h2><h3 id="7-1-Introduction"><a href="#7-1-Introduction" class="headerlink" title="7.1 Introduction"></a>7.1 Introduction</h3><p>The effective one-electron potential $V(r)$ for an electron in a molecule must be invariant under all symmetry operations which leave the molecule invariant.</p>
+<h3 id="7-2-General-Concept-of-Equivalence"><a href="#7-2-General-Concept-of-Equivalence" class="headerlink" title="7.2 General Concept of Equivalence"></a>7.2 General Concept of Equivalence</h3><p>We denote the representation that generates the transformation between equivalent atom sites by $\Gamma^{a.s.}$ and its characters by $\chi^{a.s.}$ where $a.s.\equiv$ atomic sites.</p>
+<h3 id="7-3-Directed-Valence-Bonding"><a href="#7-3-Directed-Valence-Bonding" class="headerlink" title="7.3 Directed Valence Bonding"></a>7.3 Directed Valence Bonding</h3><h3 id="7-4-Diatomic-Molecules"><a href="#7-4-Diatomic-Molecules" class="headerlink" title="7.4 Diatomic Molecules"></a>7.4 Diatomic Molecules</h3><h4 id="7-4-1-Homonuclear-Diatomic-Molecules"><a href="#7-4-1-Homonuclear-Diatomic-Molecules" class="headerlink" title="7.4.1 Homonuclear Diatomic Molecules"></a>7.4.1 Homonuclear Diatomic Molecules</h4>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Liuyang</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://yongmu.github.io/2020/06/21/Group%20Theory/">http://yongmu.github.io/2020/06/21/Group%20Theory/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Liuyang</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Group-Theory/">
+                                    <span class="chip bg-color">Group Theory</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/06/21/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-21
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Liuyang
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/06/21/Group%20Theory/">
+                    <div class="card-image">
+                        
+                        <img src="/source/medias/1.jpg" class="responsive-img" alt="Group Theory">
+                        
+                        <span class="card-title">Group Theory</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Group Theory
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-21
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Group-Theory/" class="post-category">
+                                    Group Theory
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Group-Theory/">
+                        <span class="chip bg-color">Group Theory</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 永慕<br />'
+            + '文章作者: Liuyang<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="416666116"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">Liuyang</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">2.3k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+    <a href="mailto:980058708@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=980058708" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 980058708" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
