@@ -401,7 +401,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.4k
+                    2.3k
                 </div>
                 
 
@@ -445,7 +445,7 @@
 <p><span class="math display">\[(NX)(NY) = N_iXN_lY=N_i{XN_l}Y=N_i(N_mX)Y=(N_iN_m)(XY)=N(XY)\]</span></p>
 <h3 id="factor-groups">1.7 Factor Groups</h3>
 <p><strong>Definition 10.</strong> The factor group (or quotient group) is constructed with respect to a self-conjugate subgroup as the collection of cosets of the selfconjugate subgroup, each coset being considered an element of the factor group.</p>
-<p><strong>Definition 11.</strong> The index of a subgroup <span class="math inline">\(\equiv\)</span> total number of cosets = <span class="math inline">\((order of group)/ (order of subgroup)\)</span>.</p>
+<p><strong>Definition 11.</strong> The index of a subgroup <span class="math inline">\(\equiv\)</span> total number of cosets = (order of group)/ (order of subgroup).</p>
 <p>The order of the factor group is the index of the self-conjugate subgroup.</p>
 <h3 id="group-theory-and-quantum-mechanics">1.8 Group Theory and Quantum Mechanics</h3>
 <p>The group of symmetry operators <span class="math inline">\(\hat{P}_R\)</span> which leave the Hamiltonian invariant.</p>
@@ -454,8 +454,8 @@
 <h2 id="representation-theory-and-basic-theorems">2 Representation Theory and Basic Theorems</h2>
 <h3 id="important-definitions">2.1 Important Definitions</h3>
 <p><strong>Definition 12.</strong> Two groups are isomorphic or homomorphic if there exists a correspondence between their elements such that <span class="math display">\[
-A\to\hat{A}\\\\
-B\to\hat{B}\\\\
+A\to\hat{A}\\
+B\to\hat{B}\\
 AB\to\hat{A}\hat{B}
 \]</span> <strong>Definition 13.</strong> A representation of an abstract group is a substitution group (matrix group with square matrices) such that the substitution group is homomorphic (or isomorphic) to the abstract group. We assign a matrix <span class="math inline">\(D(A)\)</span> to each element A of the abstract group such that $ D(AB) = D(A)D(B)$.</p>
 <p>First of all, we will find that an eigenfunction for a quantum mechanical operator will transform under a symmetry operation similar to the application of the matrix representing the symmetry operation on the matrix for the wave function.</p>
@@ -472,11 +472,11 @@ AB\to\hat{A}\hat{B}
 <h3 id="irreducible-representations">2.3 Irreducible Representations</h3>
 <p>block form <span class="math inline">\(\to\)</span> no longer in block form. <span class="math display">\[
 \begin{pmatrix} 
-D(A)&amp;O\\\\O&amp;D&#39;(A) 
+D(A)&amp;O\\O&amp;D&#39;(A) 
 \end{pmatrix}
 \]</span> <strong>Definition 16.</strong> If by one and the same equivalence transformation, all the matrices in the representation of a group can be made to acquire <em>the same block form</em>, then the representation is said to be <em>reducible</em>; otherwise it is <em>irreducible</em>. Thus, an irreducible representation cannot be expressed in terms of representations of lower dimensionality.</p>
 <p><span class="math inline">\(\Gamma_R\)</span> <span class="math display">\[
-\begin{pmatrix} \Gamma_1&amp;O&amp;O\\\\O&amp;\Gamma_{1&#39;}&amp;O\\\\O&amp;O&amp;\Gamma_2 \end{pmatrix}
+\begin{pmatrix} \Gamma_1&amp;O&amp;O\\O&amp;\Gamma_{1&#39;}&amp;O\\O&amp;O&amp;\Gamma_2 \end{pmatrix}
 \]</span> <span class="math display">\[\Gamma_R=\Gamma_1+\Gamma_{1&#39;}+\Gamma_2\]</span></p>
 <p>Assume <span class="math inline">\(\Gamma_R\)</span> is a reducible representation for some group <span class="math inline">\(G\)</span> but an irreducible representation for some other group <span class="math inline">\(G&#39;&#39;\)</span>.</p>
 <p>some interaction is breaking up a fourfold degenerate level in group <span class="math inline">\(G&#39;&#39;\)</span> into three energy levels in group <span class="math inline">\(G\)</span>: two nondegenerate ones and a doubly degenerate one.</p>
@@ -495,8 +495,8 @@ D(A)&amp;O\\\\O&amp;D&#39;(A)
 <p>for all <span class="math inline">\(A_x\)</span>, then <span class="math inline">\(M\)</span> must be the null matrix <span class="math inline">\((M=O)\)</span> if <span class="math inline">\(\ell_1 \neq \ell_2\)</span>. If <span class="math inline">\(\ell_1 = \ell_2\)</span>, then either <span class="math inline">\(M=O\)</span> or the representations <span class="math inline">\(D^{(1)}(A_x)\)</span> and <span class="math inline">\(D^{(2)}(A_x)\)</span> differ from each other by an equivalence (or similarity) transformation.</p>
 <h3 id="wonderful-orthogonality-theorem">2.7 Wonderful Orthogonality Theorem</h3>
 <p><strong>Theorem.</strong> The orthonormality relation</p>
-<p><span class="math display">\[\sum\_RD^{(\Gamma\_j)}\_{\mu\nu}(R)D^{(\Gamma\_{j&#39;})}\_{\mu&#39;\nu&#39;}(R^{-1})=\frac{h}{\ell\_j}\delta\_{\Gamma\_j,\Gamma\_{j&#39;}}\delta\_{\mu\mu&#39;}\delta\_{\nu\nu&#39;}\]</span></p>
-<p><span class="math display">\[\sum\_RD^{(\Gamma\_j)}\_{\mu\nu}(R)\lbrack D^{(\Gamma\_{j&#39;})}\_{\mu&#39;\nu&#39;}(R^{-1})\rbrack^*=\frac{h}{\ell\_j}\delta\_{\Gamma\_j,\Gamma\_{j&#39;}}\delta\_{\mu\mu&#39;}\delta\_{\nu\nu&#39;}\]</span></p>
+<p><span class="math display">\[\sum_RD^{(\Gamma_j)}_{\mu\nu}(R)D^{(\Gamma_{j&#39;})}_{\mu&#39;\nu&#39;}(R^{-1})=\frac{h}{\ell_j}\delta_{\Gamma_j,\Gamma_{j&#39;}}\delta_{\mu\mu&#39;}\delta_{\nu\nu&#39;}\]</span></p>
+<p><span class="math display">\[\sum_RD^{(\Gamma_j)}_{\mu\nu}(R)\lbrack D^{(\Gamma_{j&#39;})}_{\mu&#39;\nu&#39;}(R^{-1})\rbrack^*=\frac{h}{\ell_j}\delta_{\Gamma_j,\Gamma_{j&#39;}}\delta_{\mu\mu&#39;}\delta_{\nu\nu&#39;}\]</span></p>
 <h3 id="representations-and-vector-spaces">2.8 Representations and Vector Spaces</h3>
 <p><span class="math display">\[\sum_j\ell^2_j \leq h\]</span></p>
 <h2 id="character-of-a-representation">3 Character of a Representation</h2>
@@ -537,18 +537,18 @@ D(A)&amp;O\\\\O&amp;D&#39;(A)
 <h2 id="basis-functions">4 Basis Functions</h2>
 <h3 id="symmetry-operations-and-basis-functions">4.1 Symmetry Operations and Basis Functions</h3>
 <p><span class="math display">\[
-\hat{P}\_R\vert\Gamma\_n\alpha\rangle=\sum_jD^{(\Gamma\_n)}(R)_{j\alpha}\vert\Gamma\_nj\rangle
+\hat{P}_R\vert\Gamma_n\alpha\rangle=\sum_jD^{(\Gamma_n)}(R)_{j\alpha}\vert\Gamma_nj\rangle
 \]</span></p>
 <p><span class="math display">\[\langle\Gamma_nj\vert\Gamma_{n&#39;}j&#39;\rangle=\delta_{nn&#39;}\delta_{jj&#39;}\]</span></p>
 <p><span class="math display">\[
-\int\psi\^*\_{n,j}(r)\psi\_{n&#39;,j&#39;}(r)d^3r=\delta\_{nn&#39;}\delta\_{jj&#39;}
+\int\psi^*_{n,j}(r)\psi_{n&#39;,j&#39;}(r)d^3r=\delta_{nn&#39;}\delta_{jj&#39;}
 \]</span></p>
 <h3 id="use-of-basis-functions-to-generate-irreducible-representations">4.2 Use of Basis Functions to Generate Irreducible Representations</h3>
-<p><span class="math display">\[D^{(\Gamma\_n)}(R)\_{j\alpha}=\langle\Gamma\_nj\vert\hat{P}\_R\vert\Gamma\_{n}\alpha\rangle\]</span></p>
+<p><span class="math display">\[D^{(\Gamma_n)}(R)_{j\alpha}=\langle\Gamma_nj\vert\hat{P}_R\vert\Gamma_{n}\alpha\rangle\]</span></p>
 <h3 id="projection-operators-hatpgamma_n_kl">4.3 Projection Operators <span class="math inline">\(\hat{P}^{(\Gamma_n)}_{kl}\)</span></h3>
 <p><span class="math display">\[\hat{P}^{(\Gamma_n)}_{kl}\vert\Gamma_n\ell\rangle\equiv\vert\Gamma_nk\rangle\]</span></p>
 <h3 id="derivation-of-an-explicit-expression-for-hatpgamma_n_kl">4.4 Derivation of an Explicit Expression for <span class="math inline">\(\hat{P}^{(\Gamma_n)}_{kl}\)</span></h3>
-<p><span class="math display">\[\hat{P}^{(\Gamma\_n)}\_{kl}=\frac{\ell\_n}{h}D^{(\Gamma\_n)}(R)^*\_{k\ell}\hat{P}\_R\]</span></p>
+<p><span class="math display">\[\hat{P}^{(\Gamma_n)}_{kl}=\frac{\ell_n}{h}D^{(\Gamma_n)}(R)^*_{k\ell}\hat{P}_R\]</span></p>
 <h3 id="the-effect-of-projection-operations-on-an-arbitrary-function">4.5 The Effect of Projection Operations on an Arbitrary Function</h3>
 <h2 id="splitting-of-atomic-orbitals-in-a-crystal-potential">5 Splitting of Atomic Orbitals in a Crystal Potential</h2>
 <h3 id="introduction">5.1 Introduction</h3>
